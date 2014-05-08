@@ -11,7 +11,7 @@ data$datetime <- paste(data$Date, data$Time)
 data$datetime <- strptime(data$datetime, "%d/%m/%Y %H:%M:%S")
 
 # create png device
-png(file="plot4.png",width=480, height=480)
+png(file="plot4.png",width=480, height=480, bg="transparent")
 
 # define parameter: 2 lines of 2 columns
 par(mfrow = c(2, 2))

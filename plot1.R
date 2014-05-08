@@ -7,7 +7,7 @@ data <- read.csv2.sql(file = "household_power_consumption.txt",
                       sql = "SELECT * FROM file WHERE Date IN ('1/2/2007','2/2/2007')")
 
 # create png device
-png(file="plot1.png",width=480, height=480)
+png(file="plot1.png",width=480, height=480, bg="transparent")
 
 # plot
 hist(data$Global_active_power, col = "red", xlab="Global Active Power (kilowatts)", 

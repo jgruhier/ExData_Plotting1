@@ -11,7 +11,7 @@ data$datetime <- paste(data$Date, data$Time)
 data$datetime <- strptime(data$datetime, "%d/%m/%Y %H:%M:%S")
 
 # create png device
-png(file="plot2.png",width=480, height=480)
+png(file="plot2.png",width=480, height=480, bg="transparent")
 
 # plot
 plot(data$datetime, data$Global_active_power, type = "l", xlab = "", 
